@@ -17,15 +17,40 @@
     />
     <style>
       .row {
-        border: 1px solid black;
+        border: 2px solid black;
         border-radius: 30px;
         min-height: 50vh;
         overflow: hidden;
       }
       .first {
         display: flex;
-        flex-direction: column;
-        align-content: center;
+        justify-content: center;
+        /* flex-direction: row; */
+        align-items: center;
+        border-right: 2px solid black;
+        flex-wrap: wrap;
+      }
+
+      .second {
+        display: flex;
+        align-items: flex-end;
+      }
+      .third {
+        /* display: block; */
+      }
+      .third-col {
+        width: 378px;
+        height: 34%;
+        text-align: center;
+      }
+      .third-col:nth-child(1) {
+        background-color: #fff7af !important;
+      }
+      .third-col:nth-child(2) {
+        background-color: #feec57 !important;
+      }
+      .third-col:nth-child(3) {
+        background-color: #ffe11b !important;
       }
     </style>
     <title>M2-D8!</title>
@@ -50,16 +75,23 @@
         >
       </div>
     </nav>
-    <div class="container">
+    <div class="container my-5">
       <h1 class="text-center">Exercise 1</h1>
 
-      <div class="row">
-        <div class="col-6 first bg-success"><p>First Column</p></div>
-        <div class="col-2 second bg-primary"><p>Second Column</p></div>
-        <div class="col-4 third">
-          <div class="col bg-warning"><p>Third Col 1st part</p></div>
-          <div class="col"><p>Third Col 2nd part</p></div>
-          <div class="col"><p>Third Col 3rd part</p></div>
+      <div class="row my-5">
+        <div class="col-6 first bg-success text-white">
+          <p>First Column</p>
+          <p>Height 400px;</p>
+          <p>Green-ish background</p>
+          <p>Text Centered</p>
+        </div>
+        <div class="col-2 second bg-primary text-white font-weight-bolder">
+          <p>Second Column Text to the bottom bold, blue-ish background</p>
+        </div>
+        <div class="row-cols-1">
+          <div class="third-col bg-warning"><p>Third Col 1st part</p></div>
+          <div class="third-col bg-warning"><p>Third Col 2nd part</p></div>
+          <div class="third-col bg-warning"><p>Third Col 3rd part</p></div>
         </div>
       </div>
     </div>
