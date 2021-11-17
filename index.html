@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     />
     <style>
+      .navbar {
+        padding-left: 10%;
+      }
       .row {
         border: 2px solid black;
         border-radius: 30px;
@@ -51,6 +54,36 @@
       }
       .third-col:nth-child(3) {
         background-color: #ffe11b !important;
+      }
+      #second-ex {
+        display: flex;
+        justify-content: center;
+      }
+
+      #second-ex .card {
+        margin: 15px;
+        width: 36%;
+      }
+
+      #second-ex .card .card-body {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      }
+      h5 {
+        font-size: 40px;
+      }
+      .card-title {
+        display: flex;
+      }
+      .card-text {
+        text-align: center;
+      }
+
+      .card-header {
+        font-size: 20px;
+        text-align: center;
       }
     </style>
     <title>M2-D8!</title>
@@ -92,6 +125,58 @@
           <div class="third-col bg-warning"><p>Third Col 1st part</p></div>
           <div class="third-col bg-warning"><p>Third Col 2nd part</p></div>
           <div class="third-col bg-warning"><p>Third Col 3rd part</p></div>
+        </div>
+      </div>
+
+      <h1 class="text-center">Exercise 2</h1>
+    </div>
+    <div id="second-ex" class="container">
+      <div class="card">
+        <div class="card-header">Free</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <p class="price">€0</p>
+            <p class="text-muted d-inline">/ mo</p>
+          </h5>
+          <p class="card-text">
+            10 Users included <br />
+            2GB of storage <br />@email Support <br />
+            Help center access
+          </p>
+          <a href="#" class="btn btn-outline-primary">Sign up for Free</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Pro</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <p class="price">€15</p>
+            <p class="text-muted d-inline">/ mo</p>
+          </h5>
+          <p class="card-text">
+            20 Users included <br />
+            10GB of storage <br />
+            Priority email Support <br />
+            Help center access
+          </p>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Enterprise</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <p class="price">€29</p>
+            <p class="text-muted d-inline">/ mo</p>
+          </h5>
+          <p class="card-text">
+            30 Users included <br />
+            15GB of storage <br />Phone and email Support <br />
+            Help center access
+          </p>
+          <a href="#" class="btn btn-primary">Contact us</a>
         </div>
       </div>
     </div>
