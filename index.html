@@ -15,38 +15,52 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
-
+    <style>
+      .row {
+        border: 1px solid black;
+        border-radius: 30px;
+        min-height: 50vh;
+        overflow: hidden;
+      }
+      .first {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+      }
+    </style>
     <title>M2-D8!</title>
   </head>
   <body>
-    <div class="container">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark text-white bg-primary w-100"
+    <nav class="navbar navbar-expand-lg navbar-dark text-white bg-primary">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#"
+          >Home <span class="sr-only">(current)</span></a
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-nav">
-          <a class="nav-link active" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-        </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <div class="container">
       <h1 class="text-center">Exercise 1</h1>
 
       <div class="row">
-        <div class="col"></div>
+        <div class="col-6 first bg-success"><p>First Column</p></div>
+        <div class="col-2 second bg-primary"><p>Second Column</p></div>
+        <div class="col-4 third">
+          <div class="col bg-warning"><p>Third Col 1st part</p></div>
+          <div class="col"><p>Third Col 2nd part</p></div>
+          <div class="col"><p>Third Col 3rd part</p></div>
+        </div>
       </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
