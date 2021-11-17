@@ -19,7 +19,7 @@
       .navbar {
         padding-left: 10%;
       }
-      .row {
+      .first-row {
         border: 2px solid black;
         border-radius: 30px;
         min-height: 50vh;
@@ -28,7 +28,7 @@
       .first {
         display: flex;
         justify-content: center;
-        /* flex-direction: row; */
+        /* flex-http://127.0.0.1:5501/index.html#direction: row; */
         align-items: center;
         border-right: 2px solid black;
         flex-wrap: wrap;
@@ -44,7 +44,12 @@
       .third-col {
         width: 378px;
         height: 34%;
-        text-align: center;
+        /* text-align: center; */
+      }
+      .third-col span {
+        padding: 0;
+        padding-left: 0;
+        margin-left: 0px;
       }
       .third-col:nth-child(1) {
         background-color: #fff7af !important;
@@ -85,6 +90,21 @@
         font-size: 20px;
         text-align: center;
       }
+      .btn {
+        width: 100%;
+      }
+
+      /* ==================================SUMROZ */
+
+      .btnView {
+        border: 2px solid gray;
+      }
+      .Main {
+        background-color: hsl(0, 0%, 90%);
+      }
+      span {
+        margin-left: 100px;
+      }
     </style>
     <title>M2-D8!</title>
   </head>
@@ -111,75 +131,275 @@
     <div class="container my-5">
       <h1 class="text-center">Exercise 1</h1>
 
-      <div class="row my-5">
+      <div class="row first-row my-5">
         <div class="col-6 first bg-success text-white">
-          <p>First Column</p>
-          <p>Height 400px;</p>
-          <p>Green-ish background</p>
-          <p>Text Centered</p>
+          First Column <br />
+          Height 400px;<br />
+          Green-ish background<br />
+          Text Centered
         </div>
         <div class="col-2 second bg-primary text-white font-weight-bolder">
           <p>Second Column Text to the bottom bold, blue-ish background</p>
         </div>
         <div class="row-cols-1">
-          <div class="third-col bg-warning"><p>Third Col 1st part</p></div>
-          <div class="third-col bg-warning"><p>Third Col 2nd part</p></div>
-          <div class="third-col bg-warning"><p>Third Col 3rd part</p></div>
+          <div
+            class="third-col d-flex justify-content-center align-items-center"
+          >
+            <span>Third Col 1st part</span>
+          </div>
+          <div
+            class="third-col d-flex justify-content-center align-items-center"
+          >
+            <span>Third Col 2nd part</span>
+          </div>
+          <div
+            class="third-col d-flex justify-content-center align-items-center"
+          >
+            <span>Third Col 3rd part</span>
+          </div>
         </div>
       </div>
 
       <h1 class="text-center">Exercise 2</h1>
-    </div>
-    <div id="second-ex" class="container">
-      <div class="card">
-        <div class="card-header">Free</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            <p class="price">€0</p>
-            <p class="text-muted d-inline">/ mo</p>
-          </h5>
-          <p class="card-text">
-            10 Users included <br />
-            2GB of storage <br />@email Support <br />
-            Help center access
-          </p>
-          <a href="#" class="btn btn-outline-primary">Sign up for Free</a>
+      <div id="second-ex">
+        <div class="card">
+          <div class="card-header">Free</div>
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="price">€0</p>
+              <p class="text-muted d-inline">/ mo</p>
+            </h5>
+            <p class="card-text">
+              10 Users included <br />
+              2GB of storage <br />@email Support <br />
+              Help center access
+            </p>
+            <a href="#" class="btn btn-outline-primary">Sign up for Free</a>
+          </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-header">Pro</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            <p class="price">€15</p>
-            <p class="text-muted d-inline">/ mo</p>
-          </h5>
-          <p class="card-text">
-            20 Users included <br />
-            10GB of storage <br />
-            Priority email Support <br />
-            Help center access
-          </p>
-          <a href="#" class="btn btn-primary">Get Started</a>
+        <div class="card">
+          <div class="card-header">Pro</div>
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="price">€15</p>
+              <p class="text-muted d-inline">/ mo</p>
+            </h5>
+            <p class="card-text">
+              20 Users included <br />
+              10GB of storage <br />
+              Priority email Support <br />
+              Help center access
+            </p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-header">Enterprise</div>
-        <div class="card-body">
-          <h5 class="card-title">
-            <p class="price">€29</p>
-            <p class="text-muted d-inline">/ mo</p>
-          </h5>
-          <p class="card-text">
-            30 Users included <br />
-            15GB of storage <br />Phone and email Support <br />
-            Help center access
-          </p>
-          <a href="#" class="btn btn-primary">Contact us</a>
+        <div class="card">
+          <div class="card-header">Enterprise</div>
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="price">€29</p>
+              <p class="text-muted d-inline">/ mo</p>
+            </h5>
+            <p class="card-text">
+              30 Users included <br />
+              15GB of storage <br />Phone and email Support <br />
+              Help center access
+            </p>
+            <a href="#" class="btn btn-primary">Contact us</a>
+          </div>
         </div>
       </div>
     </div>
+    <!-- ====================================================== -->
+    <div class="Main container">
+      <h1 class="mt-4" style="text-align: center">Excercise 3</h1>
+      <div class="row d-flex">
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/gQG_2O9Bu6c" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnView btn">View</a>
+              <a href="#" class="btnView btn">Edit</a>
+              <span class="timeCard">9 mins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <h1 class="text-center">Exercise 5</h1>
+      <hr />
+      <div class="row">
+        <div class="col-4 d-block">
+          <strong class="font-weight-bold font h5">Features</strong>
+          <p class="text-muted mt-2">
+            Cool stuff <br />
+            Randome feature <br />
+            Team feture <br />Stuff for developers<br />
+            Another One<br />
+            Last time
+          </p>
+        </div>
+        <div class="col-4">
+          <strong class="font-weight-bold font h5">Resources</strong>
+          <p class="text-muted mt-2">
+            Resource <br />
+            Resource Name<br />
+            Another resource <br />
+            Final resource
+          </p>
+        </div>
+        <div class="col-4">
+          <strong class="font-weight-bold font h5">About</strong>
+          <p class="text-muted mt-2">
+            Teams<br />
+            Locations<br />
+            Privacy<br />
+            Terms
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
